@@ -50,9 +50,9 @@ public class Program {
 			System.out.print("Sum of salary of people whose name starts with 'M': ");
 			
 			double sumSalary = list.stream()
-									.filter(p -> p.getName().toUpperCase().charAt(0) == 'M')
-									.map(p -> p.getSalary())
-									.reduce(0.0, (x,y) -> x + y);
+					       .filter(p -> p.getName().toUpperCase().charAt(0) == 'M')
+		            		       .map(p -> p.getSalary())
+					       .reduce(0.0, (x,y) -> x + y);
 
 			System.out.println(sumSalary);
 
